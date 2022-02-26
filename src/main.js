@@ -1,4 +1,11 @@
 import { createApp } from 'vue'
-import App from './App.vue'
 
-createApp(App).mount('#app')
+import './styles/main.scss'
+
+import titleMixin from './mixins/titleMixin'
+
+import App from './App.vue'
+import router from './router'
+// import store from './store'
+
+createApp(App).mixin(titleMixin).use(router).mount('#app')
