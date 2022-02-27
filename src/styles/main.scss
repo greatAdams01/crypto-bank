@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;1,300;1,400;1,800&display=swap');
 
+@import url("https://pro.fontawesome.com/releases/v5.10.0/css/all.css");
+
 $white: #fff;
 $nav-dark: #161616;
 $theme-blue: #0353E9;
@@ -36,3 +38,4 @@ body {
 
 @import 'components/navbar';
 @import 'components/home';
+@import 'components/footer';

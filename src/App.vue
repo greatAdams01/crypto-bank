@@ -3,6 +3,7 @@
 // Check out https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup
 import DesktopNav from './components/navigations/DesktopNav.vue'
 // import MobileNav from './components/navigations/MobileNav.vue'
+import Footer from './components/common/Footer.vue'
 </script>
 
 <template>
@@ -15,6 +16,7 @@ import DesktopNav from './components/navigations/DesktopNav.vue'
     />
   </div>
   <router-view/>
+  <Footer />
 </template>
 
 <style>

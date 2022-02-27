@@ -1,0 +1,41 @@
+.footer {
+  background-color: $theme-dark-blue;
+  margin-top: 100px;
+  padding-top: 80px;
+  padding-bottom: 80px;
+  color: $white;
+
+  .footer-item {
+    p {
+      padding: 20px 0px;
+      color: $theme-gray;
+    }
+    ul {
+      list-style: none;
+      a {
+        color: $white;
+        text-decoration: none;
+        &.router-link-exact-active {
+          color: $theme-blue;
+        }
+      }
+    }
+    .social-icons {
+      margin-top: 20px;
+      display: flex;
+      justify-content: center;
+      .social-item {
+        width: 46px;
+        height: 46px;
+        background-color: $white;
+        border-radius: 50%;
+        padding: 11px 15px;
+        font-size: 19px;
+        margin-right: 10px;
+        a {
+          color: $nav-dark;
+        }
+      }
+    }
+  }
+}
