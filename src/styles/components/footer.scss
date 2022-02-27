@@ -6,6 +6,7 @@
   color: $white;
 
   .footer-item {
+    padding-bottom: 20px;
     p {
       padding: 20px 0px;
       color: $theme-gray;
@@ -23,8 +24,8 @@
     .social-icons {
       margin-top: 20px;
       display: flex;
-      justify-content: center;
       .social-item {
+        padding: 10px;
         width: 46px;
         height: 46px;
         background-color: $white;

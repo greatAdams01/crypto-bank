@@ -5,10 +5,6 @@ export default [
   },
   {
     title: 'About',
-    url: '/'
-  },
-  {
-    title: 'Contact',
-    url: '/'
+    url: '/about-us'
   }
 ]
