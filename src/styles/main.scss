@@ -2,17 +2,40 @@
 
 @import url("https://pro.fontawesome.com/releases/v5.10.0/css/all.css");
 
-$white: #fff;
 $nav-dark: #161616;
 $theme-blue: #0353E9;
 $theme-green: #175353;
 $theme-gray: #F4F4F4;
 $theme-dark-blue: #0C0918;
+
+:root {
+  --text-color: #0C0918;
+  --theme-background: #fff;
+  --white: #fff;
+  --theme-background: #fff;
+  --background-color-primary: #ebebeb;
+  --background-color-secondary: #fafafa;
+  --accent-color: #cacaca;
+  --text-primary-color: #222;
+  --element-size: 4rem;
+
+}
+
+/* Define styles for the root window with dark - mode preference */
+:root.dark-theme {
+  --text-color: #fff;
+  --white: #fff;
+  --background-color-primary: #1e1e1e;
+  --background-color-secondary: #2d2d30;
+  --accent-color: #3f3f3f;
+  --text-primary-color: #ddd;
+  --theme-background: #171B28;
+}
 // :root {
 // }
 
 body {
-  background-color: $white;
+  background-color: var(--theme-background);
   font-family: 'Open Sans', sans-serif;
 }
 

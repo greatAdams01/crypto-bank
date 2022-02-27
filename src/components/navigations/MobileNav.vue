@@ -5,19 +5,22 @@
       :class="state.toggleMobile"
     >
     <div class="container">
-      <div
-        class="burger-container"
-        @click="chanageMobileState"
-      >
+      <div class="flx-img-buger">
+        <div class="icon icon-apple">
+        <router-link to="/">
+            <h5>Rexsteelz</h5>
+          </router-link>
+      </div>
+        <div
+          class="burger-container"
+          @click="chanageMobileState"
+        >
         <div id="burger">
           <div class="bar topBar"></div>
           <div class="bar btmBar"></div>
         </div>
       </div>
-      <div class="icon icon-apple">
-        <router-link to="/">
-            <img src="/img/carmels-group-logo.svg" alt="">
-          </router-link>
+      
       </div>
       <ul
         class="menu"
@@ -65,29 +68,3 @@ export default {
   }
 }
 </script>
-
-<style lang="scss" scoped>
-/* .drawer-toggle {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  height: 50%;
-  width: 35px;
-  cursor: pointer;
-}
-
-@media (min-width: 994px) {
-  .drawer-toggle {
-    display: none;
-  }
-}
-
-.drawer-toggle .bar {
-  width: 90%;
-  height: 2px;
-  background-color: #0C0573;
-  padding: 0px;
-  margin-top: 6px;
-} */
-
-</style>

@@ -1,4 +1,5 @@
 .bg-hero {
+  color: var(--text-color);
   height: 80vh;
   .hero-item {
     display: flex;
@@ -18,6 +19,7 @@
 }
 
 .offering {
+  color: var(--text-color);
   margin-top: 90px;
   .offering-item {
     margin-top: 20px;
@@ -37,6 +39,7 @@
   }
 }
 .who-we-are {
+  color: var(--text-color);
   margin-top: 100px;
   .content {
     margin-bottom: 40px;
@@ -44,7 +47,7 @@
   .who-items {
     .content {
       padding: 30px;
-      color: $white;
+      color: var(--white);
       background-color: $theme-green;
       text-align: center;
       border-radius: 10px;
@@ -60,6 +63,7 @@
 }
 
 .how-to-invest {
+  color: var(--text-color);
   margin-top: 100px;
   .how-item {
     img {
@@ -69,6 +73,7 @@
 }
 
 .investment-package {
+  color: var(--text-color);
   margin-top: 100px;
   .title-line {
     // width: 630px;
@@ -80,6 +85,7 @@
   }
   .package-item {
     margin-bottom: 20px;
+    color: #000;
     .content {
       display: flex;
       align-items: center;
@@ -103,6 +109,7 @@
 }
 
 .top-investors {
+  color: var(--text-color);
   margin-top: 100px;
   .title-line {
     margin-bottom: 30px;
@@ -122,6 +129,7 @@
       border-radius: 10px;
       h5 {
         margin-top: 10px;
+        color: #000;
       }
       p {
         color: $theme-blue;
@@ -135,6 +143,9 @@
 }
 
 .latest-news {
+  .section-title {
+    color: var(--text-color);
+  }
   margin-top: 100px;
   .news-item {
     margin-bottom: 20px;
@@ -148,7 +159,7 @@
       background-size: cover;
       width: 290px;
       height: 190px;
-      color: $white;
+      color: var(--white);
       display: flex;
       align-items: flex-end;
       padding-left: 10px;
@@ -254,7 +265,7 @@
       .news-img {
         width: 900px;
         height: 240px;
-        color: $white;
+        color: var(--white);
         display: flex;
         align-items: flex-end;
         padding-left: 20px;

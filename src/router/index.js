@@ -11,12 +11,7 @@ const routes = [
     path: '/about-us',
     name: 'About',
     component: () => import(/* webpackChunkName: "about" */ '../views/About.vue')
-  },
-  // {
-  //   path: '/investments',
-  //   name: 'Investments',
-  //   component: () => import(/* webpackChunkName: "investments" */ '../views/Investments.vue')
-  // },
+  }
   // {
   //   path: '/sustainability',
   //   name: 'Sustainability',
