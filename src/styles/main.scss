@@ -3,6 +3,9 @@
 $white: #fff;
 $nav-dark: #161616;
 $theme-blue: #0353E9;
+$theme-green: #175353;
+$theme-gray: #F4F4F4;
+$theme-dark-blue: #0C0918;
 // :root {
 // }
 
@@ -11,4 +14,25 @@ body {
   font-family: 'Open Sans', sans-serif;
 }
 
+.title-line {
+  width: 290px;
+  height: 0px;
+  margin: 0px auto 80px auto;
+  border: 5px solid #0F62FE;
+  filter: blur(12px);
+  flex: none;
+  order: 1;
+  align-self: stretch;
+  flex-grow: 0;
+}
+
+@media (min-width: 1000px) {
+  .section-title {
+    font-weight: bold;
+    font-size: 48px;
+  }
+
+}
+
 @import 'components/navbar';
+@import 'components/home';
