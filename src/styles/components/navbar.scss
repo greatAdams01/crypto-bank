@@ -21,6 +21,12 @@
         }
       }
     }
+    .auth {
+      button {
+        color: var(--text-color) !important;
+        width: 150px;
+      }
+    }
   }
 }
 

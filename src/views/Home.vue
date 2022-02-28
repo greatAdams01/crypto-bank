@@ -1,5 +1,11 @@
 <template>
   <div class="home">
+    <DesktopNav
+      class="desktop"
+    />
+    <MobileNav
+      class="mobile"
+    />
     <section class="bg-hero">
       <div class="container">
         <div class="row">
@@ -250,10 +256,14 @@
     </div>
   </section>
 
+  <Footer />
   </div>
 </template>
 
 <script setup>
+import DesktopNav from '../components/navigations/DesktopNav.vue'
+import MobileNav from '../components/navigations/MobileNav.vue'
+import Footer from '../components/common/Footer.vue'
 
 </script>
 

@@ -1,7 +1,8 @@
 .bg-hero {
   color: var(--text-color);
-  height: 80vh;
+  height: 100vh;
   .hero-item {
+    margin-top: 80px;
     display: flex;
     align-items: center;
     p {
@@ -9,6 +10,7 @@
     }
     img {
       width: 248px;
+      margin: auto;
     }
     button {
       width: 150px;
@@ -187,6 +189,7 @@
   .bg-hero {
     height: 100vh;
     .hero-item {
+      margin-top: 0px;
       display: flex;
       align-items: center;
       .content {

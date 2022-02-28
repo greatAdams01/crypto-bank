@@ -11,17 +11,17 @@ const routes = [
     path: '/about-us',
     name: 'About',
     component: () => import(/* webpackChunkName: "about" */ '../views/About.vue')
+  },
+  {
+    path: '/signup',
+    name: 'Sign-up',
+    component: () => import(/* webpackChunkName: "sustainability" */ '../views/Signup.vue')
+  },
+  {
+    path: '/login',
+    name: 'Login',
+    component: () => import(/* webpackChunkName: "contact" */ '../views/Login.vue')
   }
-  // {
-  //   path: '/sustainability',
-  //   name: 'Sustainability',
-  //   component: () => import(/* webpackChunkName: "sustainability" */ '../views/Sustainability.vue')
-  // },
-  // {
-  //   path: '/contact-us',
-  //   name: 'Contact',
-  //   component: () => import(/* webpackChunkName: "contact" */ '../views/Contact.vue')
-  // }
 ]
 
 const router = createRouter({

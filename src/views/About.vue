@@ -1,5 +1,11 @@
 <template>
-  <div class="">
+  <div class="about">
+    <DesktopNav
+      class="desktop"
+    />
+    <MobileNav
+      class="mobile"
+    />
     <section class="bg-hero">
       <div class="container">
         <div class="content">
@@ -36,7 +42,7 @@
           <div class="col-12 col-md-6 testimonial-items">
             <div class="content">
               <div class="user">
-                <img src="../../public/img/unsplash_xmSWVeGEnJw.png" alt="">
+                <img src="/img/unsplash_xmSWVeGEnJw.png" alt="">
                 <h4>Theresa Webb</h4>
               </div>
               <p>The Certified Licensing Professional certification is for individuals working in the fields of licensing, business development and commercialization of intellectual.</p>
@@ -45,7 +51,7 @@
           <div class="col-12 col-md-6 testimonial-items">
             <div class="content">
               <div class="user">
-                <img src="../../public/img/unsplash_xmSWVeGEnJw.png" alt="">
+                <img src="/img/unsplash_xmSWVeGEnJw.png" alt="">
                 <h4>Theresa Webb</h4>
               </div>
               <p>The Certified Licensing Professional certification is for individuals working in the fields of licensing, business development and commercialization of intellectual.</p>
@@ -77,11 +83,14 @@
       </div>
     </section>
 
+  <Footer />
   </div>
 </template>
 
 <script setup>
-  
+import DesktopNav from '../components/navigations/DesktopNav.vue'
+import MobileNav from '../components/navigations/MobileNav.vue'
+import Footer from '../components/common/Footer.vue'
 </script>
 
 <style lang="scss" scoped>

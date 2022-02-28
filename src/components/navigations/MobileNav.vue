@@ -39,6 +39,10 @@
           </router-link>
         </li>
       </ul>
+      <div class="auth">
+        <button @click="$router.push('/login')" class="btn btn-white">Login</button>
+        <button @click="$router.push('/signup')" class="btn btn-primary">Sign up</button>
+      </div>
     </div>
     </div>
 </div>

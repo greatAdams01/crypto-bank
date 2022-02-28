@@ -17,8 +17,8 @@
           </li>
         </ul>
         <div class="auth">
-          <button class="btn btn-white">Login</button>
-          <button class="btn btn-primary">Sign up</button>
+          <button @click="$router.push('/login')" class="btn btn-white">Login</button>
+          <button @click="$router.push('/signup')" class="btn btn-primary">Sign up</button>
         </div>
       </div>
    </nav>
