@@ -10,6 +10,7 @@ $theme-dark-blue: #0C0918;
 
 :root {
   --text-color: #0C0918;
+  --text-color-flip: #FFF;
   --theme-background: #fff;
   --white: #fff;
   --theme-background: #fff;
@@ -24,6 +25,7 @@ $theme-dark-blue: #0C0918;
 /* Define styles for the root window with dark - mode preference */
 :root.dark-theme {
   --text-color: #fff;
+  --text-color-flip: #0C0918;
   --white: #fff;
   --background-color-primary: #1e1e1e;
   --background-color-secondary: #2d2d30;

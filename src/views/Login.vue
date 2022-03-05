@@ -20,13 +20,19 @@
         <div class="content">
           <h5 class="text-center py-4">Welcome to Rexsteelz!</h5>
           <form @submit.prevent="onsubmit">
+            <div v-if="errorMsg" class="bg-danger">
+                {{ errorMsg }}
+              </div>
+              <div v-if="successMsg" class="bg-success">
+                {{ successMsg }}
+              </div>
             <div class="form-input">
               <label for="email">Email</label>
-              <input v-model.trim="email" type="email" name="email">
+              <input v-model.trim="email" type="email" name="email" required>
             </div>
             <div class="form-input">
               <label for="password">Password</label>
-              <input v-model="password" type="password" name="password">
+              <input v-model="password" type="password" name="password" required>
             </div>
             <!-- <div class="form-input">
               <label for="confirmpassword">Confirm password</label>
@@ -49,6 +55,8 @@ export default {
   title: 'Sign up',
   data () {
     return {
+      errorMsg: '',
+      successMsg: '',
       email: '',
       password: '',
       confirmPassword: ''
@@ -56,7 +64,21 @@ export default {
   },
   methods: {
     onsubmit (e) {
-      console.log('Fired')
+      this.errorMsg = ''
+      if(!this.email || !this.password ) {
+        this.errorMsg = 'Add Inputs'
+        return
+      }
+
+      const userData = {
+        email: this.email,
+        password: this.password
+      }
+
+      this.errorMsg = ''
+      this.successMsg = 'Sucessful'
+
+      console.log(userData)
     }
   }
 }
