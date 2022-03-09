@@ -5,7 +5,7 @@
     >
       <div class="container nav-container mt-3">
         <div class="nav-brand">
-            <h2>Rexsteelz</h2>
+            <img src="/img/Logo.png">
         </div>
         <ul class="nav-container">
           <li
