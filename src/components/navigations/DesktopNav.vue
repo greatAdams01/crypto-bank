@@ -5,7 +5,7 @@
     >
       <div class="container nav-container mt-3">
         <div class="nav-brand">
-            <img src="/img/logo.png">
+            <img src="/img/logo-img.png">
         </div>
         <ul class="nav-container">
           <li
