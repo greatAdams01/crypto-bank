@@ -17,7 +17,7 @@
             </div>
           </div>
           <div class="col-12 col-md-6 hero-item">
-            <img src="/img/Money-income-rafiki.png" alt="">
+            <img src="/img/sideIMG.png" alt="">
           </div>
         </div>
       </div>
