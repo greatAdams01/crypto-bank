@@ -9,8 +9,12 @@
     <section class="bg-hero">
       <div class="container">
         <div class="content">
-          <h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h2>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quis sed velit pellentesque massa gravida ut viverra risus. Sociis mi turpis felis purus neque, vestibulum, eu, neque quis. </p>
+          <h2>About US</h2>
+          <p>Avaloq ASSETS is a cryptocurrency investment platform that gives institutional and private professional investors seamless access to both the digital and traditional asset markets while maintaining the greatest levels of security.
+          Avaloq Group AG ("we," or "us"), a Swiss corporation registered at Schwerzistrasse 6, 8807 Freienbach, Switzerland, owns and operates Avaloq Asset.
+          We provide the platforms and services that financial institutions require to succeed in the new era as a leader in banking software, services, and digital technology.
+          Our unique cryptocurrency investment platforms are built on our proven expertise in investment and asset management. Our Engage and Wealth platforms enable advisers to provide the best possible service to their clients; our Insights platform leverages data; and our Ecosystem uncovers more prospects for collaborative cryptocurrency innovation. We provide a variety of investment alternatives to make it simple for you to invest with us.
+          </p>
           <button class="btn btn-primary">Contact us</button>
           <img src="/img/stars-rafiki.svg" alt="">
         </div>
@@ -19,13 +23,14 @@
 
   <section class="about-rex">
     <div class="container">
-      <h2 class="section-title text-center">About Rexsteelz</h2>
+      <h2 class="section-title text-center">About US</h2>
       <div class="title-line" />
       <div class="content text-center">
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut placerat faucibus congue sit quis. Massa integer amet erat lectus amet erat volutpat. Posuere sollicitudin velit sit dignissim sociis fermentum fermentum. Dui maecenas pretium, ac fermentum placerat feugiat. Arcu morbi nulla cursus eget. Dolor nam morbi non, donec sed vitae augue amet tortor. Molestie sit nunc pellentesque id pulvinar.
-          Fames suspendisse ultrices pharetra quisque ornare dictum nibh. Etiam lectus id velit duis nunc egestas ultrices. Vulputate volutpat amet, a donec tristique ut lacus posuere commodo. Pharetra, fringilla quam gravida pharetra, eget. Tristique sagittis, id nunc dolor mi, tempor fusce. Pharetra donec turpis nulla consectetur. In id ut pulvinar posuere vehicula urna vulputate sit. Odio nulla arcu odio id etiam nec auctor at bibendum. Urna ultrices donec dignissim porta duis nunc massa. Pellentesque ipsum vitae, rhoncus purus tristique enim amet suscipit massa. Semper rhoncus nisi quam at nascetur. Integer vestibulum, morbi aliquet amet, placerat eleifend adipiscing at. Vestibulum lacus euismod laoreet molestie.
-          Non leo viverra nisl malesuada diam a. Lorem posuere condimentum iaculis viverra etiam turpis egestas. Facilisi viverra diam et tristique non. Integer consequat maecenas tempor suscipit et neque, sed quam nulla. Ut.
+        Avaloq ASSETS is a cryptocurrency investment platform that gives institutional and private professional investors seamless access to both the digital and traditional asset markets while maintaining the greatest levels of security.
+        Avaloq Group AG ("we," or "us"), a Swiss corporation registered at Schwerzistrasse 6, 8807 Freienbach, Switzerland, owns and operates Avaloq Asset.
+        We provide the platforms and services that financial institutions require to succeed in the new era as a leader in banking software, services, and digital technology.
+        Our unique cryptocurrency investment platforms are built on our proven expertise in investment and asset management. Our Engage and Wealth platforms enable advisers to provide the best possible service to their clients; our Insights platform leverages data; and our Ecosystem uncovers more prospects for collaborative cryptocurrency innovation. We provide a variety of investment alternatives to make it simple for you to invest with us.
         </p>
       </div>
     </div>

@@ -11,8 +11,8 @@
         <div class="row">
           <div class="col-12 col-md-6 hero-item">
             <div class="content">
-              <h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h2>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis eaque in ipsam modi sequi voluptas illo vitae, maxime ex expedita fuga! Perspiciatis similique delectus alias est eaque vero quaerat optio.</p>
+              <h2>Welcome to Avaloq Assets</h2>
+              <p>Avaloq ASSETS is a subsidiary to Avaloq Group AG, a registered financial institution that provides a secure, easy-to-use link between digital and traditional assets. All of your crypto currencies, digital assets, and traditional equities are safe, traded, and managed in one spot.</p>
               <button class="btn btn-primary">Get Started</button>
             </div>
           </div>
@@ -31,7 +31,8 @@
           <div class="col-12 col-md-4 offering-item">
             <div class="content">
               <div class="inner-content">
-                <h4>Stable & Profitable</h4>
+                <h4>Security</h4>
+                <p>Invest with your mind at peace by using our system</p>
                 <p>Experienced business owners and managers know that 3 things are necessary to ensure the long- term success of any business: growth, profit and stability.</p>
               </div>
             </div>
@@ -39,16 +40,16 @@
           <div class="col-12 col-md-4 offering-item">
             <div class="content">
               <div class="inner-content">
-                <h4>Instant Withdraw</h4>
-                <p>Withdrawal Speed: Up to 4 hours .General rules for depositing and withdrawing funds . If a deposit or withdrawal is not subject to instant execution.</p>
+                <h4>Fast Transaction</h4>
+                <p>Make fast deposits and withdrawals in and out of your investment account easily via supported cryptocurrencies.</p>
               </div>
             </div>
           </div>
           <div class="col-12 col-md-4 offering-item">
             <div class="content">
               <div class="inner-content">
-                <h4>Referral Provides</h4>
-                <p>A referral program is an organized process in which customers are rewarded for spreading the word.</p>
+                <h4>Market Analysis</h4>
+                <p>With high-end and ever advancing technology we are able to carry out precise analysis and better navigate the market.</p>
               </div>
             </div>
           </div>
@@ -61,14 +62,14 @@
         <h2 class="section-title text-center">Who we are</h2>
         <div class="title-line" />
         <div class="content text-center">
-          <h4 class="pb-4">Rexsteelz</h4>
-          <p>RexsteelzInvest remains our overall pick for investors. In addition to refusing payment for order flow, RexsteelzInvest keeps costs low, provides exceptional tools to help investors manage and analyze their portfolios, and continually improves its platforms to make things easier for investors and traders..</p>
+          <h4 class="pb-4">Avaloqs Assets</h4>
+          <p>Avaloqs Assets is a cryptocurrency investment platform that gives institutional and private professional investors seamless access to both the digital and traditional asset markets while maintaining the greatest levels of security.</p>
         </div>
         <div class="row">
           <div class="col-12 col-md-6 who-items">
             <div class="content">
-              <h4>Saving & Investments</h4>
-              <p>The Certified Licensing Professional certification is for individuals working in the fields of licensing, business development and commercialization of intellectual.</p>
+              <h4>License</h4>
+              <p>We are the Avaloq Group AG (“we”, or “us”), a Swiss company registered at Schwerzistrasse 6, 8807 Freienbach, Switzerland. We are the data controller responsible for the processing of personal data through the website.</p>
             </div>
           </div>
           <div class="col-12 col-md-6 who-items">
@@ -89,15 +90,15 @@
           <div class="col-12 col-md-5">
             <div class="text-content">
               <h5>OPEN AN ACCOUNT</h5>
-              <p>Experienced business owners and managers know that 3 things are necessary to ensure the long- term success of any business: growth, profit and stability.</p>
+              <p>Open an account in within 5 mintues.</p>
             </div>
             <div class="text-content">
-              <h5>GIVE INTEREST</h5>
-              <p>Withdrawal Speed: Up to 4 hours .General rules for depositing and withdrawing funds . If a deposit or withdrawal is not subject to instant execution.</p>
+              <h5>MAKE DEPOSIT</h5>
+              <p>Choose the cryptocurrency you would like to make mpayment with.</p>
             </div>
             <div class="text-content">
-              <h5>GET DEPOSIT</h5>
-              <p>A referral program is an organized process in which customers are rewarded for spreading the word.</p>
+              <h5>CHOOSE A PACKAGE</h5>
+              <p>From the list of packages available, choose any that suites your budget and click on the invest button</p>
             </div>
           </div>
           <div class="col-12 col-md-6 how-item">
@@ -198,18 +199,25 @@
 
   <section class="top-investors">
     <div class="container">
-      <h2 class="section-title text-center">Top investors</h2>
+      <h2 class="section-title text-center">Top Executives</h2>
         <div class="title-line" />
-        <p>Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web</p>
+        <!-- <p>Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web</p> -->
         <div class="row mt-5">
           <div class="col-12 col-md-3 investor-item">
             <div class="content">
               <div class="investor-img" />
-              <h5>Founder</h5>
-              <p>Amanatt</p>
+              <h5>co-CEO</h5>
+              <p>Thomas Beck</p>
             </div>
           </div>
           <div class="col-12 col-md-3 investor-item">
+            <div class="content">
+              <div class="investor-img" />
+              <h5>co-CEO</h5>
+              <p>Martin Greweldinger</p>
+            </div>
+          </div>
+          <!-- <div class="col-12 col-md-3 investor-item">
             <div class="content">
               <div class="investor-img" />
               <h5>Founder</h5>
@@ -222,14 +230,7 @@
               <h5>Founder</h5>
               <p>Amanatt</p>
             </div>
-          </div>
-          <div class="col-12 col-md-3 investor-item">
-            <div class="content">
-              <div class="investor-img" />
-              <h5>Founder</h5>
-              <p>Amanatt</p>
-            </div>
-          </div>
+          </div> -->
         </div>
     </div>
   </section>

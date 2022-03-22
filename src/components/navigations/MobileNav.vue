@@ -8,7 +8,7 @@
       <div class="flx-img-buger">
         <div class="icon icon-apple">
         <router-link to="/">
-            <h5>Rexsteelz</h5>
+            <h5>Avaloq</h5>
           </router-link>
       </div>
         <div
