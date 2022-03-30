@@ -11,6 +11,7 @@
     ul {
       display: flex;
       list-style: none;
+      font-weight: 700;
       li {
         a {
           color: var(--text-color);;
@@ -22,9 +23,13 @@
       }
     }
     .auth {
-      button {
+      button, input {
         color: var(--text-color) !important;
         width: 150px;
+        font-weight: 700;
+      }
+      input{
+        color: #0F62FE!important;
       }
     }
     img {

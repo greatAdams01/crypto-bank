@@ -1,16 +1,16 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;1,300;1,400;1,800&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;1,300;1,400;1,800&display=swap");
 
 @import url("https://pro.fontawesome.com/releases/v5.10.0/css/all.css");
 
 $nav-dark: #161616;
-$theme-blue: #0353E9;
+$theme-blue: #0353e9;
 $theme-green: #175353;
-$theme-gray: #F4F4F4;
-$theme-dark-blue: #0C0918;
+$theme-gray: #f4f4f4;
+$theme-dark-blue: #0c0918;
 
 :root {
-  --text-color: #0C0918;
-  --text-color-flip: #FFF;
+  --text-color: #0c0918;
+  --text-color-flip: #fff;
   --theme-background: #fff;
   --white: #fff;
   --theme-background: #fff;
@@ -19,33 +19,41 @@ $theme-dark-blue: #0C0918;
   --accent-color: #cacaca;
   --text-primary-color: #222;
   --element-size: 4rem;
-
 }
 
 /* Define styles for the root window with dark - mode preference */
 :root.dark-theme {
   --text-color: #fff;
-  --text-color-flip: #0C0918;
+  --text-color-flip: #0c0918;
   --white: #fff;
   --background-color-primary: #1e1e1e;
   --background-color-secondary: #2d2d30;
   --accent-color: #3f3f3f;
   --text-primary-color: #ddd;
-  --theme-background: #171B28;
+  --theme-background: #171b28;
 }
 // :root {
 // }
 
 body {
   background-color: var(--theme-background);
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Inter", sans-serif !important;
+  overflow-x: hidden;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Inter", sans-serif !important;
 }
 
 .title-line {
   width: 290px;
   height: 0px;
   margin: 0px auto 80px auto;
-  border: 5px solid #0F62FE;
+  border: 5px solid #0f62fe;
   filter: blur(12px);
   flex: none;
   order: 1;
@@ -58,11 +66,10 @@ body {
     font-weight: bold;
     font-size: 48px;
   }
-
 }
 
-@import 'components/navbar';
-@import 'components/home';
-@import 'components/about';
-@import 'components/auth';
-@import 'components/footer';
+@import "components/navbar";
+@import "components/home";
+@import "components/about";
+@import "components/auth";
+@import "components/footer";

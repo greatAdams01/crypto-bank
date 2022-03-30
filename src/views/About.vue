@@ -1,103 +1,165 @@
 <template>
   <div class="about">
-    <DesktopNav
-      class="desktop"
-    />
-    <MobileNav
-      class="mobile"
-    />
+    <DesktopNav class="desktop" />
+    <MobileNav class="mobile" />
     <section class="bg-hero">
       <div class="container">
-        <div class="content">
-          <h2>About US</h2>
-          <p>Avaloq ASSETS is a cryptocurrency investment platform that gives institutional and private professional investors seamless access to both the digital and traditional asset markets while maintaining the greatest levels of security.
-          Avaloq Group AG ("we," or "us"), a Swiss corporation registered at Schwerzistrasse 6, 8807 Freienbach, Switzerland, owns and operates Avaloq Asset.
-          We provide the platforms and services that financial institutions require to succeed in the new era as a leader in banking software, services, and digital technology.
-          Our unique cryptocurrency investment platforms are built on our proven expertise in investment and asset management. Our Engage and Wealth platforms enable advisers to provide the best possible service to their clients; our Insights platform leverages data; and our Ecosystem uncovers more prospects for collaborative cryptocurrency innovation. We provide a variety of investment alternatives to make it simple for you to invest with us.
+        <div class="content mx-auto">
+          <h1>{{ headingOne }}</h1>
+          <p>
+            {{ headingTwo }}
           </p>
           <button class="btn btn-primary">Contact us</button>
-          <img src="/img/stars-rafiki.svg" alt="">
         </div>
+        <img src="/img/Tostars.png" class="my-5 rocket" alt="" />
       </div>
     </section>
 
-  <section class="about-rex">
-    <div class="container">
-      <h2 class="section-title text-center">About US</h2>
-      <div class="title-line" />
-      <div class="content text-center">
-        <p>
-        Avaloq ASSETS is a cryptocurrency investment platform that gives institutional and private professional investors seamless access to both the digital and traditional asset markets while maintaining the greatest levels of security.
-        Avaloq Group AG ("we," or "us"), a Swiss corporation registered at Schwerzistrasse 6, 8807 Freienbach, Switzerland, owns and operates Avaloq Asset.
-        We provide the platforms and services that financial institutions require to succeed in the new era as a leader in banking software, services, and digital technology.
-        Our unique cryptocurrency investment platforms are built on our proven expertise in investment and asset management. Our Engage and Wealth platforms enable advisers to provide the best possible service to their clients; our Insights platform leverages data; and our Ecosystem uncovers more prospects for collaborative cryptocurrency innovation. We provide a variety of investment alternatives to make it simple for you to invest with us.
-        </p>
-      </div>
-    </div>
-  </section>
-
-  <section class="testimonial">
+    <section class="about-rex">
       <div class="container">
-        <h2 class="section-title text-center">Testimonial </h2>
+        <h2 class="section-title text-center">About US</h2>
         <div class="title-line" />
         <div class="content text-center">
-          <p>RexsteelzInvest remains our overall pick for investors. In addition to refusing payment for order flow, RexsteelzInvest keeps costs low, provides exceptional tools to help investors manage and analyze their portfolios, and continually improves its platforms to make things easier for investors and traders..</p>
-        </div>
-        <div class="row">
-          <div class="col-12 col-md-6 testimonial-items">
-            <div class="content">
-              <div class="user">
-                <img src="/img/unsplash_xmSWVeGEnJw.png" alt="">
-                <h4>Theresa Webb</h4>
-              </div>
-              <p>The Certified Licensing Professional certification is for individuals working in the fields of licensing, business development and commercialization of intellectual.</p>
-            </div>
-          </div>
-          <div class="col-12 col-md-6 testimonial-items">
-            <div class="content">
-              <div class="user">
-                <img src="/img/unsplash_xmSWVeGEnJw.png" alt="">
-                <h4>Theresa Webb</h4>
-              </div>
-              <p>The Certified Licensing Professional certification is for individuals working in the fields of licensing, business development and commercialization of intellectual.</p>
-            </div>
-          </div>
+          <p>{{ about }}</p>
         </div>
       </div>
     </section>
 
-    <section class="contact-form">
+    <section class="testimonial">
+      <div class="container">
+        <h2 class="section-title text-center">Testimonial</h2>
+        <div class="title-line" />
+        <div class="content text-center">
+          <p>
+            RexsteelzInvest remains our overall pick for investors. In addition
+            to refusing payment for order flow, RexsteelzInvest keeps costs low,
+            provides exceptional tools to help investors manage and analyze
+            their portfolios, and continually improves its platforms to make
+            things easier for investors and traders..
+          </p>
+        </div>
+        <div class="row">
+          <div v-for="testimonial in testimonials" :key="testimonial.id" class="col-12 col-md-6 testimonial-items">
+            <div class="content">
+              <div class="user">
+                <img :src="testimonial.pics" alt="" />
+                <h4>{{testimonial.name}}</h4>
+              </div>
+              <p>
+                {{testimonial.comments.replace(/(<([^>]+)>)/gi, "")}}
+              </p>
+            </div>
+          </div>
+          <!-- <div class="col-12 col-md-6 testimonial-items">
+            <div class="content">
+              <div class="user">
+                <img src="/img/unsplash_xmSWVeGEnJw.png" alt="" />
+                <h4>Theresa Webb</h4>
+              </div>
+              <p>
+                The Certified Licensing Professional certification is for
+                individuals working in the fields of licensing, business
+                development and commercialization of intellectual.
+              </p>
+            </div>
+          </div> -->
+        </div>
+      </div>
+    </section>
+
+    <section class="contact-form" id="contact">
       <div class="container">
         <div class="section-info">
           <h2 class="section-title text-center">Contact us</h2>
           <div class="title-line" />
-          <p>Non leo viverra nisl malesuada diam a. Lorem posuere condimentum iaculis viverra etiam turpis egestas. </p>
+          <p>
+            Non leo viverra nisl malesuada diam a. Lorem posuere condimentum
+            iaculis viverra etiam turpis egestas.
+          </p>
         </div>
         <div class="form">
           <form>
             <div class="form-item">
               <label for="email">Your email</label>
-              <input type="email" name="emaill" id="" placeholder="Enter email">
+              <input
+                type="email"
+                name="emaill"
+                id=""
+                placeholder="Enter email"
+              />
             </div>
             <div class="form-item">
               <label for="message">Message</label>
               <textarea name="message" id="" cols="30" rows="10"></textarea>
             </div>
+            <div class="text-center my-5">
+              <input
+                type="button"
+                value="Send"
+                class="btn btn-primary px-5 my-5"
+              />
+            </div>
           </form>
         </div>
       </div>
     </section>
-
-  <Footer />
+    <section class="">
+      <div class="section-info my-5">
+        <h2 class="section-title text-center text-white">Trend</h2>
+        <div class="title-line" />
+      </div>
+      <div
+        class="livecoinwatch-widget-5"
+        lcw-base="USD"
+        lcw-color-tx="#999999"
+        lcw-marquee-1="coins"
+        lcw-marquee-2="movers"
+        lcw-marquee-items="20"
+      ></div>
+    </section>
+    <Footer />
   </div>
 </template>
 
 <script setup>
-import DesktopNav from '../components/navigations/DesktopNav.vue'
-import MobileNav from '../components/navigations/MobileNav.vue'
-import Footer from '../components/common/Footer.vue'
+import { ref, onMounted } from "vue";
+import DesktopNav from "../components/navigations/DesktopNav.vue";
+import MobileNav from "../components/navigations/MobileNav.vue";
+import Footer from "../components/common/Footer.vue";
+
+const headingOne = ref("");
+const headingTwo = ref("");
+const about = ref("");
+const testimonials = ref("");
+
+onMounted(() => {
+  fetch("http://vicsites.herokuapp.com/contents/about-us")
+    .then((response) => response.json())
+    .then((data) => {
+      about.value = data[0].msg.replace(/(<([^>]+)>)/gi, "");
+    });
+
+  fetch("http://vicsites.herokuapp.com/contents/carousel-about")
+    .then((response) => response.json())
+    .then((data) => {
+      headingOne.value = data[0].heading_one.replace(/(<([^>]+)>)/gi, "");
+      headingTwo.value = data[0].heading_two.replace(/(<([^>]+)>)/gi, "");
+    });
+
+  fetch("http://vicsites.herokuapp.com/contents/testimonial")
+    .then((response) => response.json())
+    .then((data) => {
+      // console.log(data);
+    });
+
+  fetch("http://vicsites.herokuapp.com/contents/testimonial-body")
+    .then((response) => response.json())
+    .then((data) => {
+      console.log(data);
+      testimonials.value = data
+    });
+});
 </script>
 
 <style lang="scss" scoped>
-
 </style>
