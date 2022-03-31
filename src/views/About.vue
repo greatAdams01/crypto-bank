@@ -39,7 +39,7 @@
           </p>
         </div>
         <div class="row">
-          <div v-for="testimonial in testimonials" :key="testimonial.id" class="col-12 col-md-6 testimonial-items">
+          <div v-for="testimonial in testimonials.slice(0, 4)" :key="testimonial.id" class="col-12 col-md-6 testimonial-items my-2">
             <div class="content">
               <div class="user">
                 <img :src="testimonial.pics" alt="" />
@@ -155,7 +155,7 @@ onMounted(() => {
   fetch("http://vicsites.herokuapp.com/contents/testimonial-body")
     .then((response) => response.json())
     .then((data) => {
-      console.log(data);
+      // console.log(data);
       testimonials.value = data
     });
 });

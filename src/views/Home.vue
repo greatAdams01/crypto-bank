@@ -28,20 +28,22 @@
         <div class="title-line" />
         <div class="container">
           <div class="row">
-            <div class="col-12 col-md-4 offering-item">
+            <div
+              v-for="offering in offerings"
+              :key="offering.id"
+              class="col-12 col-md-4 offering-item"
+            >
               <div class="content">
                 <div class="inner-content">
                   <img src="/img/icon/finance.png" class="my-1" alt="" />
-                  <h4>Security</h4>
+                  <h4>{{ offering.title.replace(/(<([^>]+)>)/gi, "") }}</h4>
                   <p>
-                    Experienced business owners and managers know that 3 things
-                    are necessary to ensure the long- term success of any
-                    business: growth, profit and stability.
+                    {{ offering.msg.replace(/(<([^>]+)>)/gi, "") }}
                   </p>
                 </div>
               </div>
             </div>
-            <div class="col-12 col-md-4 offering-item">
+            <!-- <div class="col-12 col-md-4 offering-item">
               <div class="content">
                 <div class="inner-content">
                   <img src="/img/icon/withdraw.png" class="my-1" alt="" />
@@ -52,8 +54,8 @@
                   </p>
                 </div>
               </div>
-            </div>
-            <div class="col-12 col-md-4 offering-item">
+            </div> -->
+            <!-- <div class="col-12 col-md-4 offering-item">
               <div class="content">
                 <div class="inner-content">
                   <img src="/img/icon/referral.png" class="my-1" alt="" />
@@ -64,7 +66,7 @@
                   </p>
                 </div>
               </div>
-            </div>
+            </div> -->
           </div>
         </div>
       </section>
@@ -76,25 +78,23 @@
           <div class="content text-center">
             <h4 class="pb-4">Avaloqs Assets</h4>
             <p>
-              Avaloqs Assets is a cryptocurrency investment platform that gives
-              institutional and private professional investors seamless access
-              to both the digital and traditional asset markets while
-              maintaining the greatest levels of security.
+              {{ wwa }}
             </p>
           </div>
           <div class="row">
-            <div class="col-12 col-md-6 who-items">
+            <div
+              v-for="wwa in wwas"
+              :key="wwa.id"
+              class="col-12 col-md-6 who-items"
+            >
               <div class="content">
-                <h4>License</h4>
+                <h4>{{ wwa.title.replace(/(<([^>]+)>)/gi, "") }}</h4>
                 <p>
-                  We are the Avaloq Group AG (“we”, or “us”), a Swiss company
-                  registered at Schwerzistrasse 6, 8807 Freienbach, Switzerland.
-                  We are the data controller responsible for the processing of
-                  personal data through the website.
+                  {{ wwa.msg.replace(/(<([^>]+)>)/gi, "") }}
                 </p>
               </div>
             </div>
-            <div class="col-12 col-md-6 who-items">
+            <!-- <div class="col-12 col-md-6 who-items">
               <div class="content">
                 <h4>Saving & Investments</h4>
                 <p>
@@ -103,7 +103,7 @@
                   development and commercialization of intellectual.
                 </p>
               </div>
-            </div>
+            </div> -->
           </div>
           <div class="text-center my-5">
             <input
@@ -250,25 +250,29 @@
         <h2 class="section-title text-center">Top Investors</h2>
         <div class="title-line" />
         <p>
-          Many desktop publishing packages and web page editors now use Lorem
-          Ipsum as their default model text, and a search for 'lorem ipsum' will
-          uncover many web
+          {{topExecutive}}
         </p>
         <div class="row mt-5 justify-content-center">
-          <div class="col-12 col-md-3 investor-item">
+          <div
+            v-for="executive in executives"
+            :key="executive.id"
+            class="col-12 col-md-3 investor-item"
+          >
             <div class="content">
-              <div class="investor-img" />
-              <h5>co-CEO</h5>
-              <p>Thomas Beck</p>
+              <div >
+                <img :src="executive.pics" alt="">
+              </div>
+              <h5>{{ executive.name }}</h5>
+              <p>{{ executive.position }}</p>
             </div>
           </div>
-          <div class="col-12 col-md-3 investor-item">
+          <!-- <div class="col-12 col-md-3 investor-item">
             <div class="content">
               <div class="investor-img" />
               <h5>co-CEO</h5>
               <p>Martin Greweldinger</p>
             </div>
-          </div>
+          </div> -->
           <!-- <div class="col-12 col-md-3 investor-item">
             <div class="content">
               <div class="investor-img" />
@@ -326,6 +330,11 @@ import { ref, onMounted } from "vue";
 
 const headingOne = ref("");
 const headingTwo = ref("");
+const wwa = ref("");
+const offerings = ref("");
+const wwas = ref("");
+const executives = ref("");
+const topExecutive = ref("");
 
 onMounted(() => {
   fetch("http://vicsites.herokuapp.com/contents/carousel-home")
@@ -338,33 +347,34 @@ onMounted(() => {
   fetch("http://vicsites.herokuapp.com/contents/our-offering")
     .then((response) => response.json())
     .then((data) => {
-      // console.log(data);
-      // headingOne.value = data[0].heading_one.replace(/(<([^>]+)>)/gi, "");
-      // headingTwo.value = data[0].heading_two.replace(/(<([^>]+)>)/gi, "");
+      offerings.value = data;
+    });
+
+  fetch("http://vicsites.herokuapp.com/contents/top-executive")
+    .then((response) => response.json())
+    .then((data) => {
+      topExecutive = data.text.replace(/(<([^>]+)>)/gi, "")
+      // console.log(data[0].text);
     });
 
   fetch("http://vicsites.herokuapp.com/contents/top-executive-body")
     .then((response) => response.json())
     .then((data) => {
-      // console.log(data);
-      // headingOne.value = data[0].heading_one.replace(/(<([^>]+)>)/gi, "");
-      // headingTwo.value = data[0].heading_two.replace(/(<([^>]+)>)/gi, "");
+      // console.log(data)
+      executives.value = data;
     });
 
   fetch("http://vicsites.herokuapp.com/contents/wwa")
     .then((response) => response.json())
     .then((data) => {
-      console.log(data);
-      // headingOne.value = data[0].heading_one.replace(/(<([^>]+)>)/gi, "");
-      // headingTwo.value = data[0].heading_two.replace(/(<([^>]+)>)/gi, "");
+      wwa.value = data[0].text.replace(/(<([^>]+)>)/gi, "");
+      // console.log(data);
     });
 
   fetch("http://vicsites.herokuapp.com/contents/wwas")
     .then((response) => response.json())
     .then((data) => {
-      console.log(data);
-      // headingOne.value = data[0].heading_one.replace(/(<([^>]+)>)/gi, "");
-      // headingTwo.value = data[0].heading_two.replace(/(<([^>]+)>)/gi, "");
+      wwas.value = data;
     });
 });
 </script>
