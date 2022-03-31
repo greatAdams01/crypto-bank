@@ -250,25 +250,29 @@
         <h2 class="section-title text-center">Top Investors</h2>
         <div class="title-line" />
         <p>
-          Many desktop publishing packages and web page editors now use Lorem
-          Ipsum as their default model text, and a search for 'lorem ipsum' will
-          uncover many web
+          {{topExecutive}}
         </p>
         <div class="row mt-5 justify-content-center">
-          <div class="col-12 col-md-3 investor-item">
+          <div
+            v-for="executive in executives"
+            :key="executive.id"
+            class="col-12 col-md-3 investor-item"
+          >
             <div class="content">
-              <div class="investor-img" />
-              <h5>co-CEO</h5>
-              <p>Thomas Beck</p>
+              <div >
+                <img :src="executive.pics" alt="">
+              </div>
+              <h5>{{ executive.name }}</h5>
+              <p>{{ executive.position }}</p>
             </div>
           </div>
-          <div class="col-12 col-md-3 investor-item">
+          <!-- <div class="col-12 col-md-3 investor-item">
             <div class="content">
               <div class="investor-img" />
               <h5>co-CEO</h5>
               <p>Martin Greweldinger</p>
             </div>
-          </div>
+          </div> -->
           <!-- <div class="col-12 col-md-3 investor-item">
             <div class="content">
               <div class="investor-img" />
@@ -329,6 +333,8 @@ const headingTwo = ref("");
 const wwa = ref("");
 const offerings = ref("");
 const wwas = ref("");
+const executives = ref("");
+const topExecutive = ref("");
 
 onMounted(() => {
   fetch("http://vicsites.herokuapp.com/contents/carousel-home")
@@ -347,17 +353,22 @@ onMounted(() => {
   fetch("http://vicsites.herokuapp.com/contents/top-executive")
     .then((response) => response.json())
     .then((data) => {
-      console.log(data);
+      topExecutive = data.text.replace(/(<([^>]+)>)/gi, "")
+      // console.log(data[0].text);
     });
 
   fetch("http://vicsites.herokuapp.com/contents/top-executive-body")
     .then((response) => response.json())
-    .then((data) => {});
+    .then((data) => {
+      // console.log(data)
+      executives.value = data;
+    });
 
   fetch("http://vicsites.herokuapp.com/contents/wwa")
     .then((response) => response.json())
     .then((data) => {
       wwa.value = data[0].text.replace(/(<([^>]+)>)/gi, "");
+      // console.log(data);
     });
 
   fetch("http://vicsites.herokuapp.com/contents/wwas")
