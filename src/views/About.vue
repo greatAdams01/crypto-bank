@@ -155,7 +155,7 @@ onMounted(() => {
   fetch("http://vicsites.herokuapp.com/contents/testimonial-body")
     .then((response) => response.json())
     .then((data) => {
-      console.log(data);
+      // console.log(data);
       testimonials.value = data
     });
 });
