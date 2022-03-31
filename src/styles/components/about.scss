@@ -1,9 +1,15 @@
 .about {
   .bg-hero {
     height: 70vh;
+    .rocket {
+      position: absolute;
+      right: 20px;
+      top: 40%;
+    }
     .content {
       margin-top: 90px;
       text-align: center;
+      width: 70%;
       button {
         margin-top: 30px;
       }
@@ -45,6 +51,9 @@
 .contact-form {
   color: var(--text-color);
   margin-top: 100px;
+  background-image: url(/img/Ellipse.png);
+  background-repeat: no-repeat;
+  background-position: center;
   .title-line {
     margin-bottom: 40px;
   }
@@ -56,7 +65,7 @@
     margin: auto;
 
     .form-item {
-      padding-bottom:40px;
+      padding-bottom: 40px;
       display: block;
       label {
         display: block;
@@ -84,20 +93,19 @@
   }
 }
 
-
 @media (min-width: 1000px) {
-.about {
-  .bg-hero {
-    height: 100vh;
-    .content {
-      img {
-        display: inline;
-        position: absolute;
-        top: 190px;
-      } 
+  .about {
+    .bg-hero {
+      height: 100vh;
+      .content {
+        img {
+          display: inline;
+          position: absolute;
+          top: 190px;
+        }
+      }
     }
   }
-}
 
   .about-rex {
     .title-line {
@@ -128,7 +136,7 @@
     }
   }
 
-  .contact-form{
+  .contact-form {
     // .section-info {
     //   p {
     //     width: ;
@@ -139,7 +147,7 @@
       margin: auto;
 
       .form-item {
-        padding-bottom:40px;
+        padding-bottom: 40px;
         display: block;
         label {
           display: block;

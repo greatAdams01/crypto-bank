@@ -6,5 +6,9 @@ export default [
   {
     title: 'About',
     url: '/about-us'
-  }
+  },
+  // {
+  //   title: 'Contact',
+  //   url: '/about-us#contact'
+  // }
 ]

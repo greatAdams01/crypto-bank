@@ -1,9 +1,27 @@
 .bg-hero {
   color: var(--text-color);
   height: 100vh;
+  // .eclipse {
+  //   position: absolute;
+  //   width: 100%;
+  //   height: 100%;
+  //   top: -101px;
+  //   background: linear-gradient(
+  //     180deg,
+  //     rgba(15, 111, 254, 0.19) 0%,
+  //     rgba(254, 15, 216, 0.1425) 55.01%,
+  //     rgba(15, 111, 254, 0.19) 100%
+  //   );
+  //   filter: blur(450.941px);
+  //   transform: rotate(90.89deg);
+  // }
   .hero-item {
-    margin-top: 80px;
+    margin-top: auto !important;
+    margin-bottom: auto !important;
     display: flex;
+    @media (max-width:600px) {
+      margin-top: 150px !important;
+    }
     align-items: center;
     p {
       margin-top: 40px;
@@ -19,18 +37,24 @@
     }
   }
 }
-
+#circle{
+  background-image: url(/img/Ellipse.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  // background-size:;
+}
 .offering {
   color: var(--text-color);
-  margin-top: 90px;
+  margin-top: 90px !important;
+  background-color: #171b28 !important;
   .offering-item {
     margin-top: 20px;
     .content {
-      border: 1px solid #8D8D8D;
-      height: 280px;
+      border: 1px solid #8d8d8d;
+      height: 300px;
       padding: 10px 15px;
-      display: flex;
-      align-items: center;
+      // display: flex;
+      // align-items: center;
       border-radius: 10px;
       p {
         font-weight: 500;
@@ -54,6 +78,8 @@
       text-align: center;
       border-radius: 10px;
       margin-bottom: 20px;
+      height: 240px;
+      border: 1px solid #fff;
       h4 {
         padding-bottom: 10px;
       }
@@ -93,9 +119,10 @@
       align-items: center;
       height: 372px;
       text-align: center;
-      background-color: $theme-gray;
+      background-color: #0d0c1f;
       border-radius: 10px;
       padding: 20px;
+      color: #fff;
       .inner-content {
         width: 360px;
       }
@@ -116,10 +143,10 @@
   .title-line {
     margin-bottom: 30px;
   }
-  .investor-item{
+  .investor-item {
     text-align: center;
     .investor-img {
-      background-image: url('/img/unsplash_ILip77SbmOE.png');
+      background-image: url("/img/unsplash_ILip77SbmOE.png");
       background-position: center;
       background-repeat: no-repeat;
       background-size: cover;
@@ -127,11 +154,11 @@
       border-radius: 10px;
     }
     .content {
-      background-color: $theme-gray;
+      background-color: #01020c;
       border-radius: 10px;
       h5 {
         margin-top: 10px;
-        color: #000;
+        color: #fff;
       }
       p {
         color: $theme-blue;
@@ -152,10 +179,11 @@
   .news-item {
     margin-bottom: 20px;
     padding: 10px;
-    background-color: $theme-gray;
+    background-color: #0d0c1f !important;
     border-radius: 10px;
+    border: 1px solid #393939;
     .news-img {
-      background-image: url('/public/img/unsplash_5fNmWej4tAA.png');
+      background-image: url("/img/unsplash_5fNmWej4tAA.png");
       background-position: center;
       background-repeat: no-repeat;
       background-size: cover;
@@ -170,6 +198,7 @@
       margin-top: 20px;
       display: flex;
       align-items: center;
+      color: #fff;
       h5 {
         margin-bottom: 30px;
       }
@@ -204,7 +233,6 @@
       img {
         width: 548px;
       }
-
     }
   }
 
@@ -214,7 +242,7 @@
     .offering-item {
       margin-top: 20px;
       .content {
-        border: 1px solid #8D8D8D;
+        border: 1px solid #8d8d8d;
         height: 280px;
         padding: 10px 15px;
         display: flex;
@@ -248,12 +276,12 @@
     .title-line {
       width: 630px;
     }
-    p { 
+    p {
       width: 550px;
     }
   }
   .top-investors {
-    p { 
+    p {
       width: 750px;
       margin: auto;
       text-align: center;
